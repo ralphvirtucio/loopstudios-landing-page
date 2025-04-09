@@ -5,17 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-  About
+  <header class="header">
+    <h1 class="visually-hidden">Loopstudios Page</h1>
+   <div class="[ wrapper ]">
+    <nav class="[ flex flex-center-items space-between ]">
+      <img src="./images/logo.svg" alt="Loopstudios" class="logo">
+      
+      <span>
+        <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+      </span>
+    </nav>
+    <div class="content">
+      <p>Immersive Experiences that deliver</p>
+    </div>
+   </div>
+  </header>
+
+  <main>
+   <section class="[ wrapper ] interactive-vr">
+    <img src="./images/mobile/image-interactive.jpg" alt="Man playing vr">
+    <div class="content">
+      <h2>The leader in interactive vr</h2>
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</p>
+    </div>
+   </section>
+
+
+   <section class="our-creations">
+      <div>
+        <h2>Our Creations</h2>
+        <ul class="list">
+          <li>
+            <img src="./images/mobile/image-deep-earth.jpg" alt="Deep Earth">
+            <h3>Deep Earth</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-night-arcade.jpg" alt="Night Arcade">
+            <h3>Night Arcade</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team VR">
+            <h3>Soccer Team VR</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-grid.jpg" alt="The Grid">
+            <h3>The Grid</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-from-above.jpg" alt="From Up Above VR">
+            <h3>From Up Above VR</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis">
+            <h3>Pocket Borealis</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-curiosity.jpg" alt="The Curiosity">
+            <h3>The Curiosity</h3>
+          </li>
+          <li>
+            <img src="./images/mobile/image-fisheye.jpg" alt="Make it fisheye">
+            <h3>Make it fisheye</h3>
+          </li>
+        </ul>
+        <a>See all</p>
+      </div>
+   </section>
+  </main>
+
+  <!-- About
   Careers
   Events
   Products
@@ -47,13 +118,13 @@
   Careers
   Events
   Products
-  Support
+  Support -->
 
-  © 2021 Loopstudios. All rights reserved.
+  <!-- © 2021 Loopstudios. All rights reserved. -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

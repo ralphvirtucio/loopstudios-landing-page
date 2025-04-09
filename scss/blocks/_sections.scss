@@ -1,0 +1,56 @@
+section {
+  h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: get-utility-value('font', 'base');
+  }
+}
+
+
+
+.interactive-vr {
+  margin-block-start: 6rem;
+  
+  .content {
+    text-align: center;
+    margin-block-start: get-size('600');
+   
+
+    p {
+      margin-block-start: get-size('400');
+      font-family: get-utility-value('font', 'heading');
+      font-weight: 400;
+      color: get-color('gray');
+    }
+  }
+}
+
+
+.our-creations {
+  margin-block-start: 6rem;
+  text-align: center;
+  font-family: get-utility-value('font', 'base');
+
+}
+
+// .creation {
+//   border: 1px solid red;
+//   display: grid;
+
+
+//   img {
+//     position: absolute;
+//   }
+
+//   h3 {
+//     position: relative;
+//     z-index: 1;
+//     color: get-color('white');
+//     font-weight: 200;
+//     text-transform: uppercase;
+//     font-size: 1.5rem;
+//     line-height: 1.5rem;
+//   }
+// }

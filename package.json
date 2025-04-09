@@ -1,0 +1,24 @@
+{
+  "name": "loopstudios-landing-page-main",
+  "version": "1.0.0",
+  "description": "A landing page challenge from Frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx sass scss/global.scss css/global.css --watch",
+    "build": "npx sass scss/global.scss css/global.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralphvirtucio/loopstudios-landing-page.git"
+  },
+  "author": "Ralph Virtucio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralphvirtucio/loopstudios-landing-page/issues"
+  },
+  "homepage": "https://github.com/ralphvirtucio/loopstudios-landing-page#readme",
+  "dependencies": {
+    "gorko": "^0.9.1",
+    "sass": "^1.83.4"
+  }
+}

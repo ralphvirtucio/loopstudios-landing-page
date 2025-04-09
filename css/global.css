@@ -1,0 +1,632 @@
+/* GORKO: auto-generated utility classes start */
+.bg-white {
+  background: #fff;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.bg-gray {
+  background: hsl(0, 0%, 55%);
+}
+
+.bg-very-dark-gray {
+  background: hsl(0, 0%, 41%);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-gray {
+  color: hsl(0, 0%, 55%);
+}
+
+.color-very-dark-gray {
+  color: hsl(0, 0%, 41%);
+}
+
+.box-block {
+  display: block;
+}
+
+.box-flex {
+  display: flex;
+}
+
+.box-hide {
+  display: none;
+}
+
+.box-show {
+  display: inherit;
+}
+
+.font-heading {
+  font-family: Alata, sans-serif;
+}
+
+.font-base {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.gap-top-300 {
+  margin-top: 0.8rem;
+}
+
+.gap-top-400 {
+  margin-top: 1rem;
+}
+
+.gap-top-500 {
+  margin-top: 1.25rem;
+}
+
+.gap-top-600 {
+  margin-top: 1.6rem;
+}
+
+.gap-top-700 {
+  margin-top: 2rem;
+}
+
+.gap-top-900 {
+  margin-top: 3rem;
+}
+
+.gap-right-300 {
+  margin-right: 0.8rem;
+}
+
+.gap-right-400 {
+  margin-right: 1rem;
+}
+
+.gap-right-500 {
+  margin-right: 1.25rem;
+}
+
+.gap-right-600 {
+  margin-right: 1.6rem;
+}
+
+.gap-right-700 {
+  margin-right: 2rem;
+}
+
+.gap-right-900 {
+  margin-right: 3rem;
+}
+
+.gap-bottom-300 {
+  margin-bottom: 0.8rem;
+}
+
+.gap-bottom-400 {
+  margin-bottom: 1rem;
+}
+
+.gap-bottom-500 {
+  margin-bottom: 1.25rem;
+}
+
+.gap-bottom-600 {
+  margin-bottom: 1.6rem;
+}
+
+.gap-bottom-700 {
+  margin-bottom: 2rem;
+}
+
+.gap-bottom-900 {
+  margin-bottom: 3rem;
+}
+
+.gap-left-300 {
+  margin-left: 0.8rem;
+}
+
+.gap-left-400 {
+  margin-left: 1rem;
+}
+
+.gap-left-500 {
+  margin-left: 1.25rem;
+}
+
+.gap-left-600 {
+  margin-left: 1.6rem;
+}
+
+.gap-left-700 {
+  margin-left: 2rem;
+}
+
+.gap-left-900 {
+  margin-left: 3rem;
+}
+
+.pad-top-300 {
+  padding-top: 0.8rem;
+}
+
+.pad-top-400 {
+  padding-top: 1rem;
+}
+
+.pad-top-500 {
+  padding-top: 1.25rem;
+}
+
+.pad-top-600 {
+  padding-top: 1.6rem;
+}
+
+.pad-top-700 {
+  padding-top: 2rem;
+}
+
+.pad-top-900 {
+  padding-top: 3rem;
+}
+
+.pad-right-300 {
+  padding-right: 0.8rem;
+}
+
+.pad-right-400 {
+  padding-right: 1rem;
+}
+
+.pad-right-500 {
+  padding-right: 1.25rem;
+}
+
+.pad-right-600 {
+  padding-right: 1.6rem;
+}
+
+.pad-right-700 {
+  padding-right: 2rem;
+}
+
+.pad-right-900 {
+  padding-right: 3rem;
+}
+
+.pad-bottom-300 {
+  padding-bottom: 0.8rem;
+}
+
+.pad-bottom-400 {
+  padding-bottom: 1rem;
+}
+
+.pad-bottom-500 {
+  padding-bottom: 1.25rem;
+}
+
+.pad-bottom-600 {
+  padding-bottom: 1.6rem;
+}
+
+.pad-bottom-700 {
+  padding-bottom: 2rem;
+}
+
+.pad-bottom-900 {
+  padding-bottom: 3rem;
+}
+
+.pad-left-300 {
+  padding-left: 0.8rem;
+}
+
+.pad-left-400 {
+  padding-left: 1rem;
+}
+
+.pad-left-500 {
+  padding-left: 1.25rem;
+}
+
+.pad-left-600 {
+  padding-left: 1.6rem;
+}
+
+.pad-left-700 {
+  padding-left: 2rem;
+}
+
+.pad-left-900 {
+  padding-left: 3rem;
+}
+
+.stack-300 {
+  z-index: 0;
+}
+
+.stack-400 {
+  z-index: 10;
+}
+
+.stack-500 {
+  z-index: 20;
+}
+
+.stack-600 {
+  z-index: 30;
+}
+
+.stack-700 {
+  z-index: 40;
+}
+
+.text-300 {
+  font-size: 0.8rem;
+}
+
+.text-400 {
+  font-size: 1rem;
+}
+
+.text-500 {
+  font-size: 1.25rem;
+}
+
+.text-600 {
+  font-size: 1.6rem;
+}
+
+.text-700 {
+  font-size: 2rem;
+}
+
+.text-900 {
+  font-size: 3rem;
+}
+
+.weight-light {
+  font-weight: 300;
+}
+
+.weight-regular {
+  font-weight: 400;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-quarter {
+  width: 25%;
+}
+
+.width-third {
+  width: 33.3333333333%;
+}
+
+@media (min-width: 36em) {
+  .sm\:box-block {
+    display: block;
+  }
+  .sm\:box-flex {
+    display: flex;
+  }
+  .sm\:box-hide {
+    display: none;
+  }
+  .sm\:box-show {
+    display: inherit;
+  }
+  .sm\:text-300 {
+    font-size: 0.8rem;
+  }
+  .sm\:text-400 {
+    font-size: 1rem;
+  }
+  .sm\:text-500 {
+    font-size: 1.25rem;
+  }
+  .sm\:text-600 {
+    font-size: 1.6rem;
+  }
+  .sm\:text-700 {
+    font-size: 2rem;
+  }
+  .sm\:text-900 {
+    font-size: 3rem;
+  }
+  .sm\:width-full {
+    width: 100%;
+  }
+  .sm\:width-half {
+    width: 50%;
+  }
+  .sm\:width-quarter {
+    width: 25%;
+  }
+  .sm\:width-third {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 48em) {
+  .md\:box-block {
+    display: block;
+  }
+  .md\:box-flex {
+    display: flex;
+  }
+  .md\:box-hide {
+    display: none;
+  }
+  .md\:box-show {
+    display: inherit;
+  }
+  .md\:text-300 {
+    font-size: 0.8rem;
+  }
+  .md\:text-400 {
+    font-size: 1rem;
+  }
+  .md\:text-500 {
+    font-size: 1.25rem;
+  }
+  .md\:text-600 {
+    font-size: 1.6rem;
+  }
+  .md\:text-700 {
+    font-size: 2rem;
+  }
+  .md\:text-900 {
+    font-size: 3rem;
+  }
+  .md\:width-full {
+    width: 100%;
+  }
+  .md\:width-half {
+    width: 50%;
+  }
+  .md\:width-quarter {
+    width: 25%;
+  }
+  .md\:width-third {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 62em) {
+  .lg\:box-block {
+    display: block;
+  }
+  .lg\:box-flex {
+    display: flex;
+  }
+  .lg\:box-hide {
+    display: none;
+  }
+  .lg\:box-show {
+    display: inherit;
+  }
+  .lg\:text-300 {
+    font-size: 0.8rem;
+  }
+  .lg\:text-400 {
+    font-size: 1rem;
+  }
+  .lg\:text-500 {
+    font-size: 1.25rem;
+  }
+  .lg\:text-600 {
+    font-size: 1.6rem;
+  }
+  .lg\:text-700 {
+    font-size: 2rem;
+  }
+  .lg\:text-900 {
+    font-size: 3rem;
+  }
+  .lg\:width-full {
+    width: 100%;
+  }
+  .lg\:width-half {
+    width: 50%;
+  }
+  .lg\:width-quarter {
+    width: 25%;
+  }
+  .lg\:width-third {
+    width: 33.3333333333%;
+  }
+}
+/* GORKO: auto-generated utility classes end */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header {
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header .logo {
+  width: 144px;
+}
+.header nav {
+  margin-block-end: 1.6rem;
+}
+.header .content {
+  border: 1px solid #fff;
+  padding: 1.6rem;
+}
+.header .content p {
+  font-family: Josefin Sans, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+section h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.interactive-vr {
+  margin-block-start: 6rem;
+}
+.interactive-vr .content {
+  text-align: center;
+  margin-block-start: 1.6rem;
+}
+.interactive-vr .content p {
+  margin-block-start: 1rem;
+  font-family: Alata, sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+}
+
+.our-creations {
+  margin-block-start: 6rem;
+  text-align: center;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-center-items {
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 0 1.25rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=global.css.map */
