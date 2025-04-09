@@ -2,9 +2,8 @@ section {
   h2 {
     font-weight: 300;
     text-transform: uppercase;
-    // font-size: 2rem;
-    font-size: var(--step-4);
-    line-height: 32px;
+    font-size: var(--step-2);
+    line-height: 0.9;
     font-family: get-utility-value('font', 'base');
   }
 }
@@ -16,11 +15,28 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   
   .content {
     text-align: center;
     margin-block-start: get-size('600');
     background-color: get-color('white');
+    // padding-inline-start: 6rem;
+    // padding-block-start: 6rem;
+
+    @media (min-width: 48rem) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 600px;
+      padding-block-start: 6rem;
+      padding-inline-start: 6rem;
+    }
    
 
     p {
