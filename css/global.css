@@ -598,6 +598,37 @@ section h2 {
   text-align: center;
   font-family: Josefin Sans, sans-serif;
 }
+.our-creations .list {
+  margin-block-start: 1.6rem;
+  display: grid;
+  row-gap: 1rem;
+}
+.our-creations .list li {
+  position: relative;
+  text-align: left;
+}
+.our-creations .list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.our-creations .list li h3 {
+  position: absolute;
+  z-index: 1;
+  bottom: 1rem;
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  width: auto;
+  max-width: 12ch;
+  padding: 1rem;
+}
 
 .flex {
   display: flex;
