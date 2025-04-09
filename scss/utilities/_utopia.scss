@@ -1,0 +1,17 @@
+@use '../../node_modules/utopia-core-scss/src/utopia' as utopia;
+
+
+:root {
+  @include utopia.generateTypeScale((
+    "minWidth": 375,
+    "maxWidth": 1440,
+    "minFontSize": 16,
+    "maxFontSize": 36,
+    "minTypeScale": 1.2,
+    "maxTypeScale": 1.25,
+    "positiveSteps": 5,
+    "negativeSteps": 2,
+    "prefix": "step-",
+    "relativeTo": "viewport-width"
+  ))
+}

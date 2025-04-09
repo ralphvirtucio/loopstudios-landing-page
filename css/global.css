@@ -1,3 +1,14 @@
+:root {
+  --step--2: clamp(0.6944rem, 0.4319rem + 1.1201vw, 1.44rem);
+  --step--1: clamp(0.8333rem, 0.493rem + 1.4523vw, 1.8rem);
+  --step-0: clamp(1rem, 0.5599rem + 1.8779vw, 2.25rem);
+  --step-1: clamp(1.2rem, 0.6322rem + 2.4225vw, 2.8125rem);
+  --step-2: clamp(1.44rem, 0.7091rem + 3.1183vw, 3.5156rem);
+  --step-3: clamp(1.728rem, 0.7891rem + 4.0061vw, 4.3945rem);
+  --step-4: clamp(2.0736rem, 0.8695rem + 5.1374vw, 5.4932rem);
+  --step-5: clamp(2.4883rem, 0.9467rem + 6.5775vw, 6.8665rem);
+}
+
 /* GORKO: auto-generated utility classes start */
 .bg-white {
   background: #fff;
@@ -543,6 +554,11 @@ img:not([alt]) {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 48em) {
+  .header {
+    background-image: url("/images/desktop/image-hero.jpg");
+  }
+}
 .header::after {
   content: "";
   position: absolute;
@@ -569,7 +585,7 @@ img:not([alt]) {
   color: #fff;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: var(--step-5);
   line-height: 1.2;
   border: 1px solid #fff;
   padding: 1.6rem;
@@ -578,8 +594,8 @@ img:not([alt]) {
 section h2 {
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: var(--step-4);
+  line-height: 32px;
   font-family: Josefin Sans, sans-serif;
 }
 
@@ -629,7 +645,7 @@ section h2 {
   color: #fff;
   font-weight: 200;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: var(--step-2);
   line-height: 1.5rem;
   width: auto;
   max-width: 12ch;
@@ -643,6 +659,7 @@ section h2 {
   padding-block: 0.8125rem;
   padding-inline: 3rem;
   letter-spacing: 4px;
+  font-size: 0.875rem;
 }
 
 footer {

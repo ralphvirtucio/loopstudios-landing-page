@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+
+  @media (min-width: 48em) {
+    background-image: url('/images/desktop/image-hero.jpg');
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -29,14 +34,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     
     p {
       font-family: get-utility-value('font', 'base');
       color: get-color('white');
       font-weight: 300;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: var(--step-5);
       line-height: 1.2;
       border: 1px solid get-color('white');
       padding: get-size('600');

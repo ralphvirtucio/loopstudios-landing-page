@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ralphvirtucio/loopstudios-landing-page#readme",
   "dependencies": {
     "gorko": "^0.9.1",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "utopia-core-scss": "^1.2.1"
   }
 }
