@@ -30,12 +30,14 @@ section {
 
 .our-creations {
   margin-block-start: 6rem;
+  margin-block-end: 6rem;
   text-align: center;
   font-family: get-utility-value('font', 'base');
 
 
   .list {
     margin-block-start: get-size('600');
+    margin-block-end: 2.125rem;
     display: grid;
     row-gap: 1rem;
 
@@ -70,5 +72,14 @@ section {
     }
   }
 
+  a {
+    border: 1px solid #000;
+    display: inline-block;
+    font-family: get-utility-value('font', 'base');
+    text-transform: uppercase;
+    padding-block: 0.8125rem;
+    padding-inline: 3rem;
+    letter-spacing: 4px;
+  }
 }
 
