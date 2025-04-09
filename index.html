@@ -49,7 +49,10 @@
 
    <section class="our-creations [ wrapper ]">
       <div>
-        <h2>Our Creations</h2>
+        <div class="[ flex ] [ our-creations__cta ]">
+          <h2>Our Creations</h2>
+          <a class="see-all see-all--desktop">See all</a>
+        </div>
         <ul class="list">
           <li>
             <picture>
@@ -82,9 +85,8 @@
           <li>
             <picture>
               <source media="(min-width: 48rem)" srcset="./images/desktop/image-from-above.jpg">
-              <img src="./images/mobile/image-grid.jpg" alt="The Grid">
+              <img src="./images/mobile/image-from-above.jpg" alt="From Up Above VR">
             </picture>
-            <img src="./images/mobile/image-from-above.jpg" alt="From Up Above VR">
             <h3>From Up Above VR</h3>
           </li>
           <li>
@@ -109,14 +111,15 @@
             <h3>Make it fisheye</h3>
           </li>
         </ul>
-        <a>See all</a>
+        <a class="see-all see-all--mobile">See all</a>
       </div>
    </section>
   </main>
 
   <footer>
    <div class="[ wrapper ] footer">
-    <img src="./images/logo.svg" alt="Loopstudios" class="logo">
+    <div class="col">
+      <img src="./images/logo.svg" alt="Loopstudios" class="logo">
     <nav>
       <ul class="nav">
         <li><a href="#">About</a></li>
@@ -126,6 +129,9 @@
         <li><a href="#">Support</a></li>
       </ul>
     </nav>
+    </div>
+    <div>
+
     <ul class="socials">
       <li>
         <a href="https://www.facebook.com" aria-label="Facebook">
@@ -149,48 +155,8 @@
       </li>
     </ul>
     <p>© 2021 Loopstudios. All rights reserved.</p>
+  </div>
    </div>
   </footer>
-
-  <!-- About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support -->
-
-  <!-- © 2021 Loopstudios. All rights reserved. -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 </html>
