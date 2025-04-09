@@ -7,17 +7,18 @@
 
 
   @media (min-width: 48em) {
-    background-image: url('../images/mobile/image-hero.jpg');
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-size: auto;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  // }
   
   .logo {
     width: 144px;
@@ -26,6 +27,10 @@
   nav {
     padding-block-start: 2.5rem;
     margin-block-end: get-size('600');
+
+    @media (min-width: 48em) {
+      margin-block-end: 7.5rem; 
+    }
   }
 
   .content {
@@ -34,13 +39,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (min-width: 48em) {
+      justify-content: flex-start;
+      max-width: 55%;
+    }
     
     p {
       font-family: get-utility-value('font', 'base');
       color: get-color('white');
       font-weight: 300;
       text-transform: uppercase;
-      font-size: var(--step-5);
+      font-size: var(--step-3);
       line-height: 1.2;
       border: 1px solid get-color('white');
       padding: get-size('600');

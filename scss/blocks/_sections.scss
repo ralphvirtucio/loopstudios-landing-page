@@ -13,10 +13,14 @@ section {
 
 .interactive-vr {
   margin-block-start: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
   .content {
     text-align: center;
     margin-block-start: get-size('600');
+    background-color: get-color('white');
    
 
     p {
