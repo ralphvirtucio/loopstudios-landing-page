@@ -99,30 +99,67 @@ section {
   text-align: center;
   gap: 3rem;
   margin-block-end: 6rem;
+  position: relative;
 
-  .content p {
-    color: get-color('gray');
-    font-family: get-utility-value('font', 'heading');
-    font-size: 0.9375rem;
-    font-weight: 400;
-    margin-block-start: 1rem;
+  @media (min-width: 62em) {
+    flex-direction: row;
+    margin-block-end: 8rem;
+  }
+
+  .content {
+    background-color: get-color("white");
+    
+    p {
+      color: get-color('gray');
+      font-family: get-utility-value('font', 'heading');
+      font-size: 0.9375rem;
+      font-weight: 400;
+      margin-block-start: 1rem;
+    }
+
+    @media (min-width: 62em) {
+      flex: 1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      padding-inline-start: 3rem;
+      padding-block-start: 3rem;
+    }
   }
 }
 
 
 .section-2 {
   text-align: center;
-  .cta h2 {
-    margin-block-end: 3rem;
+  margin-block-end: 6rem;
+
+  .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 48em) {
+      justify-content: space-between;
+      margin-block-end: 5rem;
+    }
+    h2 {
+      margin-block-end: 3rem;
+
+      @media (min-width: 48em) {
+        margin-block-end: 0;
+      }
+    }
   }
 
   ul {
     width: auto;
-    max-width: 40rem;
+    max-width: 60rem;
+    margin-inline: auto;
 
 
     .card {
       position: relative;
+      max-width: max-content;
 
       &::before {
         content: "";
@@ -173,11 +210,18 @@ section {
 
     &.see-all--mobile {
       margin-block-start: 2.125rem;
-      margin-block-end: 6rem;
+
+      @media (min-width: 48em) {
+        display: none;
+      }
     }
 
     &.see-all--desktop {
       display: none;
+
+      @media (min-width: 48em) {
+        display: inline-block;
+      }
     }
   }
 }

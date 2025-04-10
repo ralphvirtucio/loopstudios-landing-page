@@ -688,6 +688,16 @@ section h2 {
   text-align: center;
   gap: 3rem;
   margin-block-end: 6rem;
+  position: relative;
+}
+@media (min-width: 62em) {
+  .section-1 {
+    flex-direction: row;
+    margin-block-end: 8rem;
+  }
+}
+.section-1 .content {
+  background-color: #fff;
 }
 .section-1 .content p {
   color: hsl(0, 0%, 55%);
@@ -696,19 +706,49 @@ section h2 {
   font-weight: 400;
   margin-block-start: 1rem;
 }
+@media (min-width: 62em) {
+  .section-1 .content {
+    flex: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding-inline-start: 3rem;
+    padding-block-start: 3rem;
+  }
+}
 
 .section-2 {
   text-align: center;
+  margin-block-end: 6rem;
+}
+.section-2 .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 48em) {
+  .section-2 .cta {
+    justify-content: space-between;
+    margin-block-end: 5rem;
+  }
 }
 .section-2 .cta h2 {
   margin-block-end: 3rem;
 }
+@media (min-width: 48em) {
+  .section-2 .cta h2 {
+    margin-block-end: 0;
+  }
+}
 .section-2 ul {
   width: auto;
-  max-width: 40rem;
+  max-width: 60rem;
+  margin-inline: auto;
 }
 .section-2 ul .card {
   position: relative;
+  max-width: max-content;
 }
 .section-2 ul .card::before {
   content: "";
@@ -752,10 +792,19 @@ section h2 {
 }
 .section-2 .see-all.see-all--mobile {
   margin-block-start: 2.125rem;
-  margin-block-end: 6rem;
+}
+@media (min-width: 48em) {
+  .section-2 .see-all.see-all--mobile {
+    display: none;
+  }
 }
 .section-2 .see-all.see-all--desktop {
   display: none;
+}
+@media (min-width: 48em) {
+  .section-2 .see-all.see-all--desktop {
+    display: inline-block;
+  }
 }
 
 footer {
@@ -784,6 +833,11 @@ footer p {
 .footer nav {
   margin-block-start: 2rem;
 }
+@media (min-width: 48em) {
+  .footer nav {
+    margin-block-start: 0.875rem;
+  }
+}
 
 .footer-nav {
   display: flex;
@@ -792,6 +846,11 @@ footer p {
   flex-direction: column;
   gap: 1rem;
   margin-block-start: 2rem;
+}
+@media (min-width: 48em) {
+  .footer-nav {
+    flex-direction: row;
+  }
 }
 .footer-nav li a {
   color: #fff;
@@ -810,6 +869,12 @@ footer .socials {
   gap: 1rem;
   margin-block-start: 3rem;
   margin-block-end: 1rem;
+}
+@media (min-width: 48em) {
+  footer .socials {
+    margin-block-start: 0;
+    margin-block-end: 0.875rem;
+  }
 }
 
 .flex {
@@ -834,6 +899,30 @@ footer .socials {
 
 .row-gap {
   row-gap: 1.85rem;
+}
+@media (min-width: 48em) {
+  .row-gap {
+    row-gap: 2rem;
+  }
+}
+@media (min-width: 62em) {
+  .row-gap {
+    row-gap: 1.875rem;
+  }
+}
+
+.col-gap {
+  column-gap: 1rem;
+}
+@media (min-width: 48em) {
+  .col-gap {
+    column-gap: 2rem;
+  }
+}
+@media (min-width: 62em) {
+  .col-gap {
+    column-gap: 1.875rem;
+  }
 }
 
 .wrapper {
