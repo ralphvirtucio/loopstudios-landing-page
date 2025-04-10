@@ -613,10 +613,30 @@ section h2 {
   line-height: 1;
 }
 
-.hero {
+.hero-bg {
   background-image: url("../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero-bg::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+@media (min-width: 62em) {
+  .hero-bg {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+  }
+}
+
+.hero {
   display: grid;
   min-height: 100vh;
   margin-block-end: 6rem;
@@ -634,6 +654,11 @@ section h2 {
   position: relative;
   z-index: 1;
 }
+@media (min-width: 62em) {
+  .hero header nav .disclosure {
+    display: none;
+  }
+}
 .hero header nav .disclosure__button {
   border: none;
   background-color: transparent;
@@ -645,12 +670,14 @@ section h2 {
 .hero .content {
   font-family: Josefin Sans, sans-serif;
   color: #fff;
+  width: auto;
+  max-width: 40rem;
 }
 .hero .content p {
   font-weight: 300;
   padding: 1.5rem;
   border: 1px solid #fff;
-  font-size: var(--step-0);
+  font-size: clamp(2rem, 0.6429rem + 4.2857vw, 4.5rem);
   text-transform: uppercase;
   line-height: 1;
 }
