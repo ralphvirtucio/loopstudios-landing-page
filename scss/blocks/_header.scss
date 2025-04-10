@@ -1,59 +1,70 @@
 
 
-.header {
-  background-image: url('../images/mobile/image-hero.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.disclosure__button {
+   // manage keyboard focus
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 
-
-  @media (min-width: 48em) {
-    background-image: url('../images/desktop/image-hero.jpg');
-    background-size: contain;
+   &:focus-visible {
+    outline: solid orange 3px;
+    outline-offset: 3px;
   }
 
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  // }
-  
-  .logo {
-    width: 144px;
-  }
 
-  nav {
-    padding-block-start: 2.5rem;
-    margin-block-end: get-size('600');
+  &[aria-expanded="false"] {
+    + .disclosure__content {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+    }
 
-    @media (min-width: 48em) {
-      margin-block-end: 7.5rem; 
+    .disclosure_close_icon {
+      display: none;
     }
   }
 
-  .content {
-
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media (min-width: 48em) {
-      justify-content: flex-start;
-      max-width: 55%;
+  &[aria-expanded="true"] {
+    + .disclosure__content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
     }
-    
-    p {
-      font-family: get-utility-value('font', 'base');
-      color: get-color('white');
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: var(--step-3);
-      line-height: 1.2;
-      border: 1px solid get-color('white');
-      padding: get-size('600');
+
+    .disclosure_open_icon {
+      display: none;
+    }
+
+    .disclosure_close_icon {
+      display: inline;
     }
   }
 }
+
+.disclosure__content {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-inline-start: 1.5rem;
+  display: grid;
+  align-content: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    li a {
+      text-decoration: none;
+      color: get-color('white');
+      font-family: get-utility-value('font', 'base');
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 300;
+    }
+  }
+}
+

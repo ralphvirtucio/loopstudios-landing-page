@@ -40,6 +40,7 @@
       rel="stylesheet"
       href="css/global.css" />
 
+      <script src="disclosure.js" defer></script>
       
   </head>
   <body>
@@ -57,13 +58,15 @@
             <div class="disclosure js-disclosure" data-state="no-js">
               <button
                 aria-expanded="false"
-                class="disclosure__button js-disclosure__button"
+                class="disclosure__button js-disclosure_button"
                 aria-controls="content"
                 disabled
                 title="This button becomes enabled when JavaScript is enabled"
               >
                 <span class="visually-hidden">Menu</span>
-                <svg  width="24" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="disclosure__icon"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+                <svg  width="24" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="disclosure_open_icon"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="disclosure_close_icon"><path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" fill="#FFF" fill-rule="evenodd"/></svg>
               </button>
 
               <div class="disclosure__content" id="content">
