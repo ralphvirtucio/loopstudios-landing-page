@@ -652,7 +652,6 @@ section h2 {
 @media (min-width: 62em) {
   .hero-bg {
     background-image: url("../images/desktop/image-hero.jpg");
-    background-size: cover;
   }
 }
 .hero-bg::before {
@@ -670,7 +669,7 @@ section h2 {
 
 .hero {
   display: grid;
-  min-height: 100vh;
+  min-height: 90vh;
   margin-block-end: 6rem;
   z-index: 1;
   position: relative;
