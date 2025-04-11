@@ -27,93 +27,119 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
 
     <style>
-       /**
+      /**
    * Hide the menu during the 'no-js' state
    * to solve Cumulative Layout Shift.
    */
-        [data-state='no-js'] .disclosure__content {
-          display: none;
-        }
+      [data-state='no-js'] .disclosure__content {
+        display: none;
+      }
     </style>
 
     <link
       rel="stylesheet"
       href="css/global.css" />
 
-      <script src="disclosure.js" defer></script>
-      
+    <script
+      src="disclosure.js"
+      defer></script>
   </head>
   <body>
     <div>
       <div class="hero-bg">
         <div class="[ wrapper ] hero">
-        <header>
-          <h1 class="visually-hidden">LoopStudios Page</h1>
-          <nav>
-            <div class="logo">
-              <img
-                src="./images/logo.svg"
-                alt="Loopstudios logo" />
-            </div>
-
-            <div class="disclosure js-disclosure" data-state="no-js">
-              <button
-                aria-expanded="false"
-                class="disclosure__button js-disclosure_button"
-                aria-controls="content"
-                disabled
-                title="This button becomes enabled when JavaScript is enabled"
-              >
-                <span class="visually-hidden">Menu</span>
-                <svg  width="24" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="disclosure_open_icon"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
-
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="disclosure_close_icon"><path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" fill="#FFF" fill-rule="evenodd"/></svg>
-              </button>
-
-              <div class="disclosure__content" id="content">
-                 <ul class="mobile-nav">
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Careers</a>
-                  </li>
-                  <li>
-                    <a href="#">Events</a>
-                  </li>
-                  <li>
-                    <a href="#">Products</a>
-                  </li>
-                  <li>
-                    <a href="#">Support</a>
-                  </li>
-                 </ul>
+          <header>
+            <h1 class="visually-hidden">LoopStudios Page</h1>
+            <nav>
+              <div class="logo">
+                <img
+                  src="./images/logo.svg"
+                  alt="Loopstudios logo" />
               </div>
 
-            </div>
-            <ul class="desktop__nav">
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">Events</a>
-              </li>
-              <li>
-                <a href="#">Products</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+              <div
+                class="disclosure js-disclosure"
+                data-state="no-js">
+                <button
+                  aria-expanded="false"
+                  class="disclosure__button js-disclosure_button"
+                  aria-controls="content"
+                  disabled
+                  title="This button becomes enabled when JavaScript is enabled">
+                  <span class="visually-hidden">Menu</span>
+                  <svg
+                    width="24"
+                    height="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="disclosure_open_icon">
+                    <g
+                      fill="#FFF"
+                      fill-rule="evenodd">
+                      <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+                    </g>
+                  </svg>
 
-        <div class="content">
-          <p>Immersive Experiences that deliver</p>
-        </div>
+                  <svg
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="disclosure_close_icon">
+                    <path
+                      d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+                      fill="#FFF"
+                      fill-rule="evenodd" />
+                  </svg>
+                </button>
+
+                <div
+                  class="disclosure__content"
+                  id="content">
+                  <ul class="mobile-nav">
+                    <li>
+                      <a href="#">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#">Events</a>
+                    </li>
+                    <li>
+                      <a href="#">Products</a>
+                    </li>
+                    <li>
+                      <a href="#">Support</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="desktop__nav">
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Products</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <div class="content">
+            <p>Immersive Experiences that deliver</p>
+          </div>
         </div>
       </div>
 
@@ -140,7 +166,11 @@
         <section class="[ wrapper ] section-2">
           <div class="cta">
             <h2>Our creations</h2>
-            <a href="#" class="see-all see-all--desktop">See all</a>
+            <a
+              href="#"
+              class="see-all see-all--desktop"
+              >See all</a
+            >
           </div>
           <ul class="[ grid grid-col-auto-fill row-gap col-gap ]">
             <li class="card">
@@ -153,7 +183,9 @@
                   alt="Deep Earth" />
               </picture>
               <h3>
-                <a href="#">Deep Earth</a>
+                <a href="#">
+                  <p>Deep Earth</p>
+                </a>
               </h3>
             </li>
             <li class="card">
@@ -166,22 +198,40 @@
                   alt="Night Arcade" />
               </picture>
               <h3>
-                <a href="#">Night Arcade</a>
+                <a href="#">
+                  <p>Night Arcade</p>
+                </a>
               </h3>
             </li>
             <li class="card">
               <picture>
-                <source media="(min-width: 48rem)" srcset="./images/desktop/image-soccer-team.jpg">
-                <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team VR">
+                <source
+                  media="(min-width: 48rem)"
+                  srcset="./images/desktop/image-soccer-team.jpg" />
+                <img
+                  src="./images/mobile/image-soccer-team.jpg"
+                  alt="Soccer Team VR" />
               </picture>
-              <h3><a href="#">Soccer Team VR</a></h3>
+              <h3>
+                <a href="#">
+                  <p>Soccer Team VR</p>
+                </a>
+              </h3>
             </li>
             <li class="card">
               <picture>
-                <source media="(min-width: 48rem)" srcset="./images/desktop/image-grid.jpg">
-                <img src="./images/mobile/image-grid.jpg" alt="The Grid">
+                <source
+                  media="(min-width: 48rem)"
+                  srcset="./images/desktop/image-grid.jpg" />
+                <img
+                  src="./images/mobile/image-grid.jpg"
+                  alt="The Grid" />
               </picture>
-              <h3><a href="#">The Grid</a></h3>
+              <h3>
+                <a href="#">
+                  <p>The Grid</p>
+                </a>
+              </h3>
             </li>
             <li class="card">
               <picture>
@@ -192,7 +242,11 @@
                   src="./images/mobile/image-from-above.jpg"
                   alt="From Up Above VR"
               /></picture>
-              <h3><a href="#">From Up Above VR</a></h3>
+              <h3>
+                <a href="#">
+                  <p>From Up Above VR</p>
+                </a>
+              </h3>
             </li>
             <li class="card">
               <picture>
@@ -203,7 +257,11 @@
                   src="./images/mobile/image-pocket-borealis.jpg"
                   alt="Pocket Borealis" />
               </picture>
-              <h3><a href="#">Pocket Borealis</a></h3>
+              <h3>
+                <a href="#">
+                  <p>Pocket Borealis</p>
+                </a>
+              </h3>
             </li>
             <li class="card">
               <picture>
@@ -214,7 +272,11 @@
                   src="./images/mobile/image-curiosity.jpg"
                   alt="The Curiosity" />
               </picture>
-              <h3><a href="#">The Curiosity</a></h3>
+              <h3>
+                <a href="#">
+                  <p>The Curiosity</p>
+                </a>
+              </h3>
             </li>
             <li class="card">
               <picture>
@@ -225,11 +287,19 @@
                   src="./images/mobile/image-fisheye.jpg"
                   alt="Make it fisheye" />
               </picture>
-              <h3><a href="#">Make it fisheye</a></h3>
+              <h3>
+                <a href="#">
+                  <p>Make it fisheye</p>
+                </a>
+              </h3>
             </li>
           </ul>
           <div>
-            <a href="#" class="see-all see-all--mobile">See all</a>
+            <a
+              href="#"
+              class="see-all see-all--mobile"
+              >See all</a
+            >
           </div>
         </section>
       </main>

@@ -156,11 +156,11 @@ section {
     max-width: 60rem;
     margin-inline: auto;
 
-
     .card {
       position: relative;
       max-width: max-content;
 
+     
       &::before {
         content: "";
         position: absolute;
@@ -174,23 +174,44 @@ section {
       }
 
 
-      h3 a {
-        text-align: left;
-        font-family: get-utility-value("font", "base");
-        color: get-color('white');
-        text-decoration: none;
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
-        line-height: 1;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding-inline-start: 1.5rem;
-        padding-block-end: 1.5rem;
-        width: auto;
-        max-width: 12ch;
+
+
+      h3 {
+
+        a {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: get-color('white');
+          text-decoration: none;
+          font-family: get-utility-value("font", "base");
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+          line-height: 1;
+          text-align: left;
+          
+
+           p {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding-inline-start: 1.5rem;
+            padding-block-end: 1.5rem;
+            width: auto;
+            max-width: 12ch; 
+           }
+          
+
+          &:hover {
+            background-color: hsla(0, 0, 100%, 0.75);
+            color: #000;
+          }
+        }
       }
     }
   }
