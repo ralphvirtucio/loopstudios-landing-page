@@ -811,7 +811,7 @@ section h2 {
   line-height: 1;
   text-align: left;
 }
-.section-2 ul .card h3 a p {
+.section-2 ul .card h3 a span {
   display: inline-block;
   position: absolute;
   left: 0;
@@ -881,11 +881,11 @@ footer p {
   }
 }
 
-.footer nav {
+.footer .sitemap {
   margin-block-start: 2rem;
 }
 @media (min-width: 48em) {
-  .footer nav {
+  .footer .sitemap {
     margin-block-start: 0.875rem;
   }
 }
