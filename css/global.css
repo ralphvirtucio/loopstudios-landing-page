@@ -823,6 +823,11 @@ section h2 {
   border: 1px solid #000;
   padding-block: 0.8125rem;
   padding-inline: 2.6875rem;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+.section-2 .see-all:hover {
+  color: #fff;
+  background-color: #000;
 }
 .section-2 .see-all.see-all--mobile {
   margin-block-start: 2.125rem;
@@ -889,12 +894,22 @@ footer p {
 .footer-nav li a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
   font-size: 0.8125rem;
-  font-weight: 400;
 }
-.footer-nav li a:hover {
-  color: hsl(0, 0%, 55%);
-  text-decoration: underline;
+.footer-nav li a:hover::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  border: 1px solid #fff;
+  width: 50%;
+  height: auto;
 }
 
 footer .socials {
@@ -903,6 +918,23 @@ footer .socials {
   gap: 1rem;
   margin-block-start: 3rem;
   margin-block-end: 1rem;
+}
+footer .socials li a {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+footer .socials li a:hover::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  border: 1px solid #fff;
+  width: 80%;
+  height: auto;
 }
 @media (min-width: 48em) {
   footer .socials {

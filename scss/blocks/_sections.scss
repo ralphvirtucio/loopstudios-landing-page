@@ -207,6 +207,12 @@ section {
     border: 1px solid #000;
     padding-block: 0.8125rem;
     padding-inline: 2.6875rem;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+    &:hover {
+      color: get-color('white');
+      background-color: #000;
+    }
 
     &.see-all--mobile {
       margin-block-start: 2.125rem;
