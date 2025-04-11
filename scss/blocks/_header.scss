@@ -1,5 +1,42 @@
 
 
+.desktop__nav {
+  display: none;
+  font-family: get-utility-value('font', 'heading');  
+
+  a {
+    color: get-color('white');
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+   
+
+
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        border: 1px solid get-color('white');
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  @media (min-width: 62em) {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+
 .disclosure__button {
    // manage keyboard focus
   cursor: pointer;
