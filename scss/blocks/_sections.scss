@@ -11,6 +11,18 @@ section {
 
 
 .hero-bg {
+  
+  background-image: url('../images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  @media (min-width: 62em) {
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-size: cover;
+  }
+
   &::before {
     content: "";
     top: 0;
@@ -19,21 +31,9 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: 0;
-  }
-  background-image: url('../images/mobile/image-hero.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-
-
-
-  @media (min-width: 62em) {
-    background-image: url('../images/desktop/image-hero.jpg');
-    background-size: cover;
   }
 }
 
@@ -44,12 +44,6 @@ section {
   margin-block-end: 6rem;
   z-index: 1;
   position: relative;
-  // @media (min-width: 62em) {
-  //   grid-template-rows: 1fr 3fr;
-  // }
-
- 
-
 }
 
 .hero header nav {
@@ -86,7 +80,7 @@ section {
   font-family: get-utility-value('font', 'base');
   color: get-color('white');
   width: auto;
-  max-width: 45rem;
+  max-width: 40rem;
   
   p {
     font-weight: 300;
